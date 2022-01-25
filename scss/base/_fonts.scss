@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Ruberoid';
+    src: url('../fonts/Ruberoid-Regular.eot');
+    src: url('../fonts/Ruberoid-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ruberoid-Regular.woff2') format('woff2'),
+        url('../fonts/Ruberoid-Regular.woff') format('woff'),
+        url('../fonts/Ruberoid-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+
+  font-display: swap;
+}
+@font-face {
+    font-family: 'Ruberoid';
+    src: url('../fonts/Ruberoid-SemiBold.eot');
+    src: url('../fonts/Ruberoid-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ruberoid-SemiBold.woff2') format('woff2'),
+        url('../fonts/Ruberoid-SemiBold.woff') format('woff'),
+        url('../fonts/Ruberoid-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+
+  font-display: swap;
+}
+@font-face {
+    font-family: 'Ruberoid';
+    src: url('../fonts/Ruberoid-Bold.eot');
+    src: url('../fonts/Ruberoid-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Ruberoid-Bold.woff2') format('woff2'),
+        url('../fonts/Ruberoid-Bold.woff') format('woff'),
+        url('../fonts/Ruberoid-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+
+  font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon/fonts/icomoon.eot');
+    src: url('../fonts/icomoon/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon/fonts/icomoon.woff') format('woff'),
+        url('../fonts/icomoon/fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
