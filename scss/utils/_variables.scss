@@ -1,0 +1,30 @@
+/* reset */
+$min-width: 320px; 
+$max-width: 135rem; 
+$base-font-size: 1.6rem; 
+$base-line-height: 1.75; 
+$base-font-family: Ruberoid, Arial, sans-serif;
+$custom-font-family: $base-font-family; 
+$default-transition:all 0.3s ease-in;
+
+/* main variables */
+
+//text, titles
+$text-color:  #fff;
+$title-color: $text-color;
+$title-font-family: $base-font-family;
+$color-active: #FFE500;
+$color2: #7B7B7C;
+
+$color1: #29A690;
+$link-color: $color-active;
+$link-color-hover: #fff;
+$base-bg: #000;
+$placeholder: rgba(#fff,.4);
+
+$font-size-h1: 36px;
+$line-height-h1: 42px;
+$font-size-h2: 32px;
+$line-height-h2: 37px;
+$font-size-h3: 28px;
+$line-height-h3: 32px;
