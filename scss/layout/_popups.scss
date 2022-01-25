@@ -1,0 +1,81 @@
+.window-open {
+	position: absolute;
+	left: 0;
+	top: -200%;
+	right: 0;
+	overflow: hidden;
+	height: 100%
+}
+
+.popup {
+	width: 100%;
+	background: #fff;
+	min-height: 100%;
+	display: flex !important;
+	align-items: center;
+	overflow: auto;
+}
+
+.login-link {
+	padding: 5.5rem;
+background: rgba(196, 196, 196, 0.1);
+border: 1px solid #000000;
+border-radius: 20px;
+backdrop-filter: blur(60px);
+max-width: 59.9rem;
+margin: 7rem auto 0;
+width: 100%
+}
+.popup-1 {
+	.fancybox-close-small {
+		display: none;
+	}	.block-popup {
+		text-align: center;
+		width: 100%;
+		position: relative;
+		z-index:2
+	}
+		.preloader-bg  {
+			z-index: 1;
+			opacity: 1;
+				background-color:rgba(0, 0, 0, .75);
+				&:after {
+	
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background: rgba(0, 0, 0, .75);
+				top: 0;
+				right: 0;}
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				height: 48%;
+				top: auto;
+z-index: 0;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+			}
+
+		}
+}
+.btn_link-login {
+	width: 100%
+}
+
+@media screen and (max-width: 767px) {
+.login-link {
+	padding: 5.5rem 2.8rem
+}
+.popup-1 .block-popup {
+	padding: 0 3.8rem
+}
+.login-link {
+	margin-top: 1.5rem
+}
+}
