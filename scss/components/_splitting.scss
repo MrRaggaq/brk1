@@ -1,0 +1,109 @@
+/* Recommended styles for Splitting */
+.splitting .word,
+.splitting .char {
+  display: inline-block;
+}
+
+/* Psuedo-element chars */
+.splitting .char {
+  position: relative;
+}
+
+/**
+ * Populate the psuedo elements with the character to allow for expanded effects
+ * Set to `display: none` by default; just add `display: block` when you want
+ * to use the psuedo elements
+ */
+.splitting .char::before,
+.splitting .char::after {
+  content: attr(data-char);
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: inherit;
+  user-select: none;
+}
+
+/* Expanded CSS Variables */
+
+.splitting {
+  /* The center word index */
+  --word-center: calc((var(--word-total) - 1) / 2);
+
+  /* The center character index */
+  --char-center: calc((var(--char-total) - 1) / 2);
+
+  /* The center character index */
+  --line-center: calc((var(--line-total) - 1) / 2);
+}
+
+.splitting .line .word {
+  /* Pecent (0-1) of the word's position */
+  --word-percent: calc(var(--word-index) / var(--word-total));
+
+  /* Pecent (0-1) of the line's position */
+  --line-percent: calc(var(--line-index) / var(--line-total));
+}
+
+
+
+    .splitting .word {
+    white-space: nowrap;
+        display: inline;
+        padding-bottom: 0.25em;
+        margin-bottom: -.25em
+    }
+    .web {
+      .splitting .word::before {
+    content: attr(data-word);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: inherit;
+    user-select: none;
+}
+
+  .text--folding-2 .word, .text--folding-3 .word {
+    color: transparent;
+    &:before {
+      color: $text-color;
+    }
+  }
+    }
+    .web .splitting .word {
+
+        display: inline-block;
+        overflow: hidden;
+       position: relative;
+            --char-percent: calc(var(--char-index) / var(--char-total));
+            --char-offset: calc(var(--char-index) - var(--char-center));
+            --distance: calc( (var(--char-offset) * var(--char-offset)) / var(--char-center));
+            --distance-sine: calc(var(--char-offset) / var(--char-center));
+            --distance-percent: calc((var(--distance) / var(--char-center)));
+            display: inline-block;
+ 
+
+    }
+    .web .text--folding-2:not(.scrolled) .word:before {
+
+    transform: translateY(130%);
+  }
+    .web .text--folding-3:not(.scrolled) .word:before {
+        transform: none;
+            transition: none;
+            opacity: 0
+    }
+      .web .text--folding-2.scrolled .word:before {
+        transition: transform .6s linear
+      }
+      .web .text--folding-3.scrolled .word:before {
+        transition: opacity .6s linear
+      }
+    .web .text--folding-2.scrolled .word:before {
+        transition-delay: calc(30ms * var(--word-index));
+      }
+
+     .web .text--folding-3.scrolled .word:before {
+        transition-delay: calc(.2s + 30ms * var(--word-index));
+      }
